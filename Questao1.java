@@ -16,7 +16,9 @@ public class Questao1 {
             resultadoDivisao = primeiroNumero/segundoNumero;
             System.out.println("O resultado da sua divisão é: "+resultadoDivisao);
         }else{
-            System.out.println("Você não pode dividir por 0 (zero)");
+            System.out.println("Atenção! Você não pode dividir por 0 (zero)");
+            System.out.println("Digite os numeros novamente abaixo: \n");
+            main(args);
         }
         scanner.close();
     }
