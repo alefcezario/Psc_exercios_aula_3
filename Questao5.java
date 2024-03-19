@@ -24,9 +24,9 @@ public class Questao5 {
     }else if (imc>=25&&imc<30){
         System.out.println("Você está com sobrepeso!!");  
     }else if (imc>=30&&imc<40){
-        System.out.println("Você está com Obeso!!"); 
+        System.out.println("Você está Obeso!!"); 
     }else{
-        System.out.println("Você está com Obeso Morbido!!"); 
+        System.out.println("Você está  Obeso Morbido!!"); 
     }
     scanner.close(); 
 
