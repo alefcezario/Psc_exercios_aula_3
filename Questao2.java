@@ -1,11 +1,12 @@
 import java.util.Scanner;
+
 public class Questao2 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         
         double primeiraNota, segundaNota, terceiraNota, mediaNotas;
         
-        System.out.println("Pra calcular a média, digite a nota da sua 1ª avaliação: ");
+        System.out.println("Pra calcular a média, digite a nota entre 1 e 10 da sua 1ª avaliação ");
         primeiraNota = scanner.nextDouble();
         
         System.out.println("Agora digite a nota da sua 2ª avaliação: ");
