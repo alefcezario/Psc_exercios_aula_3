@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Questao3 {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
       
       double votosBrancos, votosNulos, votosValidos, totalEleitores;
@@ -21,12 +21,11 @@ public class Questao3 {
        percentualNulos = votosNulos/totalEleitores*100;
        percentualValidos = votosValidos/totalEleitores*100;
        
-       System.out.println("O total de eleitores é: "+totalEleitores);
-       System.out.println(percentualBrancos+"% dos eleitores votaram em branco.");
-       System.out.println(percentualNulos+"% dos eleitores anularam seu voto.");
-       System.out.println(percentualValidos+"% dos votos foram validos!");
+       System.out.println("O total de votos dos eleitores é: "+totalEleitores);
+       System.out.println(String.format("%.2f", percentualBrancos)+" % dos eleitores votaram em branco.");
+       System.out.println(String.format("%.2f", percentualNulos)+" % dos eleitores anularam seu voto.");
+       System.out.println(String.format("%.2f", percentualValidos)+" % dos votos foram validos!");
               
        scanner.close();     
     }
-
 }
