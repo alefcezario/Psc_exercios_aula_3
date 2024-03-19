@@ -16,12 +16,17 @@ public class Questao2 {
         terceiraNota = scanner.nextDouble();
         
         mediaNotas = (primeiraNota+segundaNota+terceiraNota)/3;
-        System.out.println("Sua média de notas é: "+mediaNotas);
-        
-        if(mediaNotas>=7){
+                
+        if(primeiraNota>10||segundaNota>10||terceiraNota>10){
+            System.out.println("Atenção! Favor digitar a nota apenas entre 1 e 10!\n");
+            main(args);
+        }else if(mediaNotas>=7){
             System.out.println("Você foi aprovado! :-)");
+            System.out.println("Sua média de notas é: "+mediaNotas);
+
         }else{
             System.out.println("Você foi reprovado! :-(");
+            System.out.println("Sua média de notas é: "+mediaNotas);
         }
         
         scanner.close();
