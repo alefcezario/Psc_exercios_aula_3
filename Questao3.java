@@ -21,6 +21,7 @@ public class Questao3 {
        percentualNulos = votosNulos/totalEleitores*100;
        percentualValidos = votosValidos/totalEleitores*100;
        
+       System.out.println("O total de eleitores é: "+totalEleitores);
        System.out.println(percentualBrancos+"% dos eleitores votaram em branco.");
        System.out.println(percentualNulos+"% dos eleitores anularam seu voto.");
        System.out.println(percentualValidos+"% dos votos foram validos!");
