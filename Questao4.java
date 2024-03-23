@@ -13,7 +13,8 @@ public class Questao4 {
         System.out.println("Por favor, informe o valor do salário atual: ");
         salario = scanner.nextDouble();
 
-        /*estrutura if corrigida com consições else if
+        
+        /*estrutura if corrigida com condições else if
         * para que seja execultada apenas a que atender a condição solicitada.
         */
         if(salario <= 1000) {
@@ -27,7 +28,7 @@ public class Questao4 {
             salario = (salario * taxaAumento1) + 200;
         }else{
             //adicionada uma ultima condição para o caso de salarios maiores de 4000 ele perguntar o salario novamente
-            System.out.printf("Apenas salários menores que R$4000,00 terão aumento!\nDigite novamente o valor do salario abaixo: \n\n");
+            System.out.printf("Apenas salários menores ou iguais a R$4000,00 terão aumento!\nDigite novamente o valor do salario abaixo: \n\n");
             main(args);
         }
 
